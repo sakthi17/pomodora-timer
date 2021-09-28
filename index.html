@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pomodoro Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h3 id="title">POMODORA TIMER <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank"><sub>Say what ?</sub></a></h3>
+
+<div class="cont">
+     <div id="task-pane" class="pane">
+		<button id="addtask">ADD TASK</button>
+		<button id="clearallbtn" style="display:none">CLEAR ALL</button>
+	</div>
+	<div id="timer-pane" class="pane" style="borde:1px solid red">
+          
+          <div id=settings-panel style="display:none">
+               <i class="fa fa-cogs" aria-hidden="true"></i>
+               <div id="settime">
+                    <i class="fa fa-minus-circle delta" aria-hidden="true"></i>
+                    <span id="interval">25</span>
+                    <i class="fa fa-plus-circle delta" aria-hidden="true"></i>       
+               </div>
+          </div>
+          <div id="clock" style="borde:1px solid green;">
+               <div>
+                    <button id="timer"><span id="length">00:00</span></button>
+               </div>
+               <div id="control-bar">
+                    <i class="fa fa-play-circle" aria-hidden="true" style="display:none"></i>
+               </div>
+          </div>
+          
+          <div class="bottomdiv">
+               <span id="workingon"></span>
+               <div id="tname"></div>
+               <button id="command" class="signalstart">Ready Start</button>
+          </div>     
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
